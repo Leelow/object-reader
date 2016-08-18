@@ -52,13 +52,13 @@ objectReader.read(obj, "a.c.[0]") // 1
 objectReader.read(obj, "a.c.0") // 1
 
 // get filtered array of objects
-objectReader.read(obj, "a.d.(e='0', f='1')" // [ {e: 0, f: 1, g: 2 } ], get array of objects where e = 0 and f = 1
-objectReader.read(obj, "a.d.(g='2')" // [ {e: 0, f: 1, g: 2 }, {e: 0, f: 2, g: 2, h: 3 } ], get array of objects where g = 2
-objectReader.read(obj, "a.d.(e='1')" // [], return an empty array because there is no object having e = 1
+objectReader.read(obj, "d.(e='0', f='1')") // [ {e: 0, f: 1, g: 2 } ], get array of objects where e = 0 and f = 1
+objectReader.read(obj, "d.(g='2')") // [ {e: 0, f: 1, g: 2 }, {e: 0, f: 2, g: 2, h: 3 } ], get array of objects where g = 2
+objectReader.read(obj, "d.(e='1')") // [], return an empty array because there is no object having e = 1
 
 // apply operation
 objectReader.read(obj, "g.@concat") // [0, 1, 1, 2], concat array keeping duplicates
-objectReader.read(obj, "a.d.@merge") // {e: [0, 0], f: [1, 2], g: [2, 2], h: [3] }, make array with object fields
+objectReader.read(obj, "d.@merge") // {e: [0, 0], f: [1, 2], g: [2, 2], h: [3] }, make array with object fields
  ```
  
 ### Immutability

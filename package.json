@@ -12,13 +12,16 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.12",
     "istanbul": "^0.4.4",
+    "minicat": "^1.0.0",
     "mocha": "^3.0.2",
-    "mocha-jenkins-reporter": "^0.2.3",
+    "mocha-lcov-reporter": "^1.2.0",
     "standard": "^7.1.2"
   },
   "scripts": {
-    "test": "standard && \"node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha -- --timeout 60000 -c --recursive --reporter mocha-jenkins-reporter -O junit_report_path=tests-report.xml"
+    "test": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec",
+    "coveralls" : "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && \"./node_modules/.bin/minicat\" ./coverage/lcov.info | node \"./node_modules/coveralls/bin/coveralls.js\""
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,14 @@
+# Npm
+/node_modules
+npm-debug.log
+
+# IntelliJ
+/.idea
+object-reader.iml
+
+# Mocha and Istanbul
+/coverage
+tests-report.xml
+
+# Other
+/tmp

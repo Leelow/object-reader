@@ -1,10 +1,10 @@
-[![npm](https://img.shields.io/npm/dt/object-reader.svg?maxAge=3600)](https://www.npmjs.com/package/object-reader)
-[![Build Status](https://travis-ci.org/Leelow/object-reader.svg?branch=master)](https://travis-ci.org/Leelow/object-reader)
-[![Coverage Status](https://coveralls.io/repos/github/Leelow/object-reader/badge.svg?branch=master)](https://coveralls.io/github/Leelow/object-reader?branch=master)
-[![Dependencies](https://david-dm.org/leelow/object-reader/status.svg)](https://david-dm.org/leelow/object-reader)
-[![Dev-dependencies](https://david-dm.org/leelow/object-reader/dev-status.svg)](https://david-dm.org/leelow/object-reader?type=dev)
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm](https://img.shields.io/npm/l/object-reader.svg?maxAge=3600)](http://spdx.org/licenses/MIT)
+[![NPM downloads][downloads-image]][downloads-url]
+[![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
+[![Dependencies][dependencies-image]][dependencies-url]
+[![Dev-dependencies][dev-dependencies-image]][dev-dependencies-url]
+[![JavaScript Style Guide][javascript-standard-image]][javascript-standard-url]
+[![Codacy Badge][codacy-image]][codacy-url]
 
 # object-reader 
 This modules allows you to access deep properties and make operations on objects using a path.
@@ -64,3 +64,22 @@ objectReader.read(obj, "d.@merge") // {e: [0, 0], f: [1, 2], g: [2, 2], h: [3] }
 ### Immutability
 
 Reading operations are guarantee without side effects.
+
+## License
+
+[MIT](LICENSE)
+
+[downloads-image]: https://img.shields.io/npm/dt/object-reader.svg?maxAge=3600
+[downloads-url]: https://www.npmjs.com/package/object-reader
+[travis-image]: https://travis-ci.org/Leelow/object-reader.svg?branch=master
+[travis-url]: https://travis-ci.org/Leelow/object-reader
+[coveralls-image]: https://coveralls.io/repos/github/Leelow/object-reader/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/Leelow/object-reader?branch=master
+[dependencies-image]: https://david-dm.org/leelow/object-reader/status.svg
+[dependencies-url]: https://david-dm.org/leelow/object-reader?type=dev
+[dev-dependencies-image]: https://david-dm.org/leelow/object-reader/dev-status.svg
+[dev-dependencies-url]: https://david-dm.org/leelow/object-reader?type=dev
+[javascript-standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[javascript-standard-url]: http://standardjs.com/
+[codacy-image]: https://api.codacy.com/project/badge/Grade/528dc51671de4a218f405116e24fca23
+[codacy-url]: https://www.codacy.com/app/leo-lozach/object-reader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Leelow/object-reader&amp;utm_campaign=Badge_Grade

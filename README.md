@@ -1,10 +1,10 @@
-[![npm](https://img.shields.io/npm/dt/object-reader.svg?maxAge=2592000)](https://www.npmjs.com/package/object-reader)
+[![npm](https://img.shields.io/npm/dt/object-reader.svg?maxAge=3600)](https://www.npmjs.com/package/object-reader)
 [![Build Status](https://travis-ci.org/Leelow/object-reader.svg?branch=master)](https://travis-ci.org/Leelow/object-reader)
 [![Coverage Status](https://coveralls.io/repos/github/Leelow/object-reader/badge.svg?branch=master)](https://coveralls.io/github/Leelow/object-reader?branch=master)
 [![Dependencies](https://david-dm.org/leelow/object-reader/status.svg)](https://david-dm.org/leelow/object-reader)
 [![Dev-dependencies](https://david-dm.org/leelow/object-reader/dev-status.svg)](https://david-dm.org/leelow/object-reader?type=dev)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm](https://img.shields.io/npm/l/object-reader.svg?maxAge=2592000)](http://spdx.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/l/object-reader.svg?maxAge=3600)](http://spdx.org/licenses/MIT)
 
 # object-reader 
 This modules allows you to access deep properties and make operations on objects using a path.

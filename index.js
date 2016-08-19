@@ -1,5 +1,18 @@
 const Operations = require('./lib/operations.js')
 
+/**
+ * Split a path escaping dots
+ * @param path
+ * @returns {Array}
+ */
+function splitPath (path) {
+  return path.split(/(.*?[^\\])\./).filter(function (item) {
+    return item !== ''
+  }).map(function (item) {
+    return item.replace(/\\/g, '')
+  })
+}
+
 module.exports = {
 
   /**
@@ -9,11 +22,11 @@ module.exports = {
    * @returns {*}
    */
   read: function (obj, path) {
-    if (path.indexOf('.') === -1) return Operations.apply(obj, path)
-    else {
-      var arr = path.split('.')
-      return this.read(Operations.apply(obj, arr.shift()), arr.join('.'))
+    var split = splitPath(path)
+    while (split.length > 0) {
+      obj = Operations.apply(obj, split.shift())
     }
+    return obj
   }
 
 }

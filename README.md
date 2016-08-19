@@ -40,7 +40,8 @@ var obj = {
       h: 3
     }
   ],
-  g: [ [0, 1], [1, 2] ]
+  g: [ [0, 1], [1, 2] ],
+  "b.c": "escaping works !"
 };
 
 var objectReader = require("object-reader");
@@ -59,8 +60,11 @@ objectReader.read(obj, "d.(e='1')") // [], return an empty array because there i
 // apply operation
 objectReader.read(obj, "g.@concat") // [0, 1, 1, 2], concat array keeping duplicates
 objectReader.read(obj, "d.@merge") // {e: [0, 0], f: [1, 2], g: [2, 2], h: [3] }, make array with object fields
+
+// escaping dots
+objectReader.read(obj, "a.b\\.c") // "escaping works !"
+
  ```
- 
 ### Immutability
 
 Reading operations are guarantee without side effects.

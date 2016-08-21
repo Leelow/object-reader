@@ -11,7 +11,7 @@ This module allows you to access deep properties and make operations on objects 
 
 ### What is a "path" ?
 
-A part is a string which describes how an object will be read.
+A path is a string which describes how an object will be read.
 
 ### Install
 

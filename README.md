@@ -7,7 +7,7 @@
 [![Codacy Badge][codacy-image]][codacy-url]
 
 # object-reader 
-This modules allows you to access deep properties and make operations on objects using a path.
+This module allows you to access deep properties and make operations on objects using a path.
 
 ### What is a "path" ?
 

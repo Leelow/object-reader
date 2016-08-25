@@ -1,6 +1,6 @@
 {
   "name": "object-reader",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Access deep properties and make operations on objects using a path",
   "main": "index.js",
   "directories": {
@@ -29,6 +29,12 @@
     "url": "git+https://github.com/Leelow/object-reader.git"
   },
   "author": "leelow",
+  "keywords": [
+    "object",
+    "reader",
+    "path",
+    "explorer"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Leelow/object-reader/issues"

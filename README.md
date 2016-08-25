@@ -17,7 +17,9 @@ A path is a string which describes how an object will be read.
 
 ### Node.js
 
-    npm install object-reader --save
+```bash
+npm install object-reader --save
+```
 
 ### Usage
 
@@ -68,6 +70,15 @@ objectReader.read(obj, "a.b\\.c") // "escaping works !"
 ### Immutability
 
 Reading operations are guarantee without side effects.
+
+### Tests
+
+  To run the test suite, first install the dependencies, then run `npm test`:
+
+```bash
+npm install
+npm test
+```
 
 ## License
 

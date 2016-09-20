@@ -16,5 +16,10 @@ describe('Index', function () {
     it('should return the same object', function () {
       assert.deepEqual(ObjectReader.read({a: 0}, ''), {a: 0})
     })
+
+    it('should return undefined', function () {
+      assert.isUndefined(ObjectReader.read({a: {b: 1}}, 'a.b.c'))
+      assert.isUndefined(ObjectReader.read({a: {b: 1}}, 'a.c.b'))
+    })
   })
 })

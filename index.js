@@ -13,8 +13,7 @@ function splitPath (path) {
   })
 }
 
-module.exports = {
-
+var objectReader = {
   /**
    * Loop over the object using path
    * @param obj
@@ -24,9 +23,19 @@ module.exports = {
   read: function (obj, path) {
     var split = splitPath(path)
     while (split.length > 0) {
+      if (typeof obj === 'undefined') return undefined
       obj = Operations.apply(obj, split.shift())
     }
     return obj
   }
+}
 
+if (typeof define === 'function' && define.amd) {
+  define(function () {
+    return objectReader
+  })
+} else if (typeof module !== 'undefined' && module.exports) {
+  module.exports = objectReader
+} else {
+  this.objectReader = objectReader
 }

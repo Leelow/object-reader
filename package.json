@@ -1,6 +1,6 @@
 {
   "name": "object-reader",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Access deep properties and make operations on objects using a path",
   "main": "index.js",
   "directories": {
@@ -14,6 +14,7 @@
     "chai": "^3.5.0",
     "codacy-coverage": "^2.0.0",
     "coveralls": "^2.11.12",
+    "decache": "^4.1.0",
     "istanbul": "^0.4.4",
     "minicat": "^1.0.0",
     "mocha": "^3.0.2",
@@ -21,7 +22,7 @@
     "standard": "^8.0.0"
   },
   "scripts": {
-    "test": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec",
+    "test": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec",
     "coverage": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && \"./node_modules/.bin/minicat\" ./coverage/lcov.info | node \"./node_modules/coveralls/bin/coveralls.js\" && \"./node_modules/.bin/minicat\" ./coverage/lcov.info | node \"./node_modules/.bin/codacy-coverage\""
   },
   "repository": {
@@ -39,5 +40,10 @@
   "bugs": {
     "url": "https://github.com/Leelow/object-reader/issues"
   },
-  "homepage": "https://github.com/Leelow/object-reader#readme"
+  "homepage": "https://github.com/Leelow/object-reader#readme",
+  "standard": {
+    "global": [
+      "define"
+    ]
+  }
 }

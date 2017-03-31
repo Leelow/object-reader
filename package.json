@@ -1,10 +1,17 @@
 {
   "name": "object-reader",
-  "version": "1.1.0",
-  "description": "Access deep properties and make operations on objects using a path",
+  "version": "1.1.1",
   "main": "index.js",
-  "directories": {
-    "test": "test"
+  "description": "An easy way to read object properties.",
+  "license": "MIT",
+  "author": {
+    "name": "Leo Lozach",
+    "email": "leo.lozach@gmail.com",
+    "url": "https://github.com/Leelow"
+  },
+  "scripts": {
+    "test": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec",
+    "coverage": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && \"./node_modules/.bin/minicat\" ./coverage/lcov.info | node \"./node_modules/coveralls/bin/coveralls.js\" && \"./node_modules/.bin/minicat\" ./coverage/lcov.info | node \"./node_modules/.bin/codacy-coverage\""
   },
   "dependencies": {
     "deep-equal": "^1.0.1",
@@ -19,28 +26,22 @@
     "minicat": "^1.0.0",
     "mocha": "^3.0.2",
     "mocha-lcov-reporter": "^1.2.0",
-    "standard": "^8.0.0"
-  },
-  "scripts": {
-    "test": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha -- --recursive -R spec",
-    "coverage": "standard && \"./node_modules/.bin/istanbul\" cover ./node_modules/mocha/bin/_mocha --report lcovonly -- --recursive -R spec && \"./node_modules/.bin/minicat\" ./coverage/lcov.info | node \"./node_modules/coveralls/bin/coveralls.js\" && \"./node_modules/.bin/minicat\" ./coverage/lcov.info | node \"./node_modules/.bin/codacy-coverage\""
+    "standard": "^9.0.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Leelow/object-reader.git"
   },
-  "author": "leelow",
+  "bugs": {
+    "url": "https://github.com/Leelow/object-reader/issues"
+  },
+  "homepage": "https://github.com/Leelow/object-reader#readme",
   "keywords": [
     "object",
     "reader",
     "path",
     "explorer"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Leelow/object-reader/issues"
-  },
-  "homepage": "https://github.com/Leelow/object-reader#readme",
   "standard": {
     "global": [
       "define"

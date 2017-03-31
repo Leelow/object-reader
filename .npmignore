@@ -12,3 +12,8 @@ tests-report.xml
 
 # Other
 tmp
+
+test
+.gitignore
+.appveyor.yml
+.travis.yml

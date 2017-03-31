@@ -1,5 +1,6 @@
 [![NPM downloads][downloads-image]][downloads-url]
-[![Build Status][travis-image]][travis-url]
+[![Travis Status][travis-image]][travis-url]
+[![Appveyor Status][appveyor-image]][appveyor-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Dependencies][dependencies-image]][dependencies-url]
 [![Dev-dependencies][dev-dependencies-image]][dev-dependencies-url]
@@ -88,6 +89,8 @@ npm test
 [downloads-url]: https://www.npmjs.com/package/object-reader
 [travis-image]: https://travis-ci.org/Leelow/object-reader.svg?branch=master
 [travis-url]: https://travis-ci.org/Leelow/object-reader
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/c36ad48d9f3jvpra?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/Leelow/object-reader
 [coveralls-image]: https://coveralls.io/repos/github/Leelow/object-reader/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/Leelow/object-reader?branch=master
 [dependencies-image]: https://david-dm.org/leelow/object-reader/status.svg

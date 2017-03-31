@@ -8,6 +8,8 @@
 [![Codacy Badge][codacy-image]][codacy-url]
 
 # object-reader 
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Leelow/object-reader.svg)](https://greenkeeper.io/)
 This module allows you to access deep properties and make operations on objects using a path.
 
 ### What is a "path" ?

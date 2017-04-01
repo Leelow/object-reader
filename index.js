@@ -30,12 +30,4 @@ var objectReader = {
   }
 }
 
-if (typeof define === 'function' && define.amd) {
-  define(function () {
-    return objectReader
-  })
-} else if (typeof module !== 'undefined' && module.exports) {
-  module.exports = objectReader
-} else {
-  this.objectReader = objectReader
-}
+module.exports = objectReader

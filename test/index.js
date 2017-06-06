@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-const assert = require('chai').assert
+const assert = require('assert')
 const ObjectReader = require('../index.js')
 
 describe('Index', function () {
@@ -18,8 +18,8 @@ describe('Index', function () {
     })
 
     it('should return undefined', function () {
-      assert.isUndefined(ObjectReader.read({a: {b: 1}}, 'a.b.c'))
-      assert.isUndefined(ObjectReader.read({a: {b: 1}}, 'a.c.b'))
+      assert.equal(ObjectReader.read({a: {b: 1}}, 'a.b.c'), undefined)
+      assert.equal(ObjectReader.read({a: {b: 1}}, 'a.c.b'), undefined)
     })
   })
 })

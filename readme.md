@@ -1,6 +1,5 @@
 # object-reader 
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Leelow/object-reader.svg)](https://greenkeeper.io/)
 [![npm version][npm-version-image]][npm-version-url]
 [![NPM downloads][downloads-image]][downloads-url]
 [![Travis Status][travis-image]][travis-url]

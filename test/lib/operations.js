@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 
-const assert = require('chai').assert
+const assert = require('assert')
 const Operations = require('./../../lib/operations.js')
 
 describe('Operations', function () {

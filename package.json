@@ -23,7 +23,7 @@
     "decache": "^4.1.0",
     "istanbul": "^0.4.4",
     "minicat": "^1.0.0",
-    "mocha": "^4.0.0",
+    "mocha": "^5.0.0",
     "mocha-lcov-reporter": "^1.2.0",
     "standard": "^10.0.0"
   },

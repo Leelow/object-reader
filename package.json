@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "codacy-coverage": "^2.0.0",
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.0.3",
     "decache": "^4.1.0",
     "istanbul": "^0.4.4",
     "minicat": "^1.0.0",
